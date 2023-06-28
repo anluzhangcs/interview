@@ -82,5 +82,16 @@ public class CommodityServiceImpl extends ServiceImpl<CommodityMapper, Commodity
         return ResponseResult.ok().setData(page);
     }
 
+    /**
+     * 根据id返回单价
+     * @param id
+     * @return
+     */
+    @Override
+    public Double getPriceById(Long id) {
+        Commodity commodity = getById(id);
+        return commodity.getPrice();
+    }
+
 }
 

@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * (Commodity)
@@ -24,7 +25,7 @@ public class Commodity {
     //单价
     private Double price;
     //入库时间
-    private LocalDate storeTime;
+    private LocalDateTime storeTime;
     //逻辑删除(0-未删除;1-删除)
     private Integer delFlag;
 

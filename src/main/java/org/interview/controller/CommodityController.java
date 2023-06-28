@@ -26,7 +26,7 @@ public class CommodityController{
         return commodityService.addCommodity(commodity);
     }
 
-    @GetMapping("/delete")
+    @GetMapping("/delete/{id}")
     public ResponseResult deleteCommodity(@PathVariable Long id) {
         return commodityService.deleteCommodity(id);
     }
@@ -38,7 +38,7 @@ public class CommodityController{
 
 
     @GetMapping("/list")
-    public ResponseResult queryCommodity(@RequestBody SearchModel model) {
+    public ResponseResult queryCommodity(SearchModel model) {
         return commodityService.queryCommodity(model);
     }
 

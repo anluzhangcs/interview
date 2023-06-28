@@ -20,5 +20,7 @@ public interface CommodityService extends IService<Commodity> {
     ResponseResult editCommodity(Commodity commodity);
 
     ResponseResult queryCommodity(SearchModel model);
+
+    Double getPriceById(Long id);
 }
 
